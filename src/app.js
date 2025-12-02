@@ -21,7 +21,8 @@ window.onload = function () {
   let whatindex = getrandomindex(what);
   let whenindex = getrandomindex(when);
   excuseLine.innerHTML = `${who[whoindex]} ${action[actionindex]} ${what[whatindex]} ${when[whenindex]}`;
+  
 
 
-  console.log(`${what} ${who} ${when}`);
+  console.log(`${what} ${who} ${when} ${action}`);
 };
