@@ -24,11 +24,9 @@ window.onload = function () {
   ];
   const excuseLine = document.querySelector("#excuse");
   const picture = document.querySelector("#pictures");
-  const element = document.getElementById('myElementId')
+  
   // const footer = document.querySelector(#footer)
-  if (element) {
-    element.style.width = '18rem';
-}
+  
 
   function getrandomindex(array) {
     const randomindex = Math.floor(Math.random() * array.length);
@@ -45,6 +43,9 @@ window.onload = function () {
   picture.src = pictures[getrandomindex(pictures)];
   console.log(`${what} ${who} ${when} ${action}`);
   // console.log(footer.classname)
+  if (picture) {
+    picture.style.width = '18rem';
+}
 
   // footer.classmate += " bg-success"
 };
